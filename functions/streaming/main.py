@@ -38,8 +38,8 @@ import pytz
 
 
 PROJECT_ID = os.getenv('GCP_PROJECT')
-BQ_DATASET = 'mydataset'
-BQ_TABLE = 'mytable'
+BQ_DATASET = 'kiosk_analytics_reporting'
+BQ_TABLE = 'helloworld'
 ERROR_TOPIC = 'projects/%s/topics/%s' % (PROJECT_ID, 'streaming_error_topic')
 SUCCESS_TOPIC = 'projects/%s/topics/%s' % (PROJECT_ID, 'streaming_success_topic')
 DB = firestore.Client()
